@@ -39,10 +39,15 @@
     </div>
 	</header>
 
-	<section class="container">
-		<div ng-controller="textText">
-			<h1>{{testText}}</h1>
-		</div>
+	<section class="container" ng-controller="stringData">
+		<div>
+			<h1> Science-Hippie</h1>
+      <h3> See some of your favorite scientists turn into hippies!</h3>
+
+      <div class="scientist">
+        <p class="scientist-name"> Albert Einstein</p>
+        <p class="scientist-quote"> {{string | replace}} </p>
+      </div>
 	</section>
 
 	<footer id="footer">
@@ -60,5 +65,6 @@
 <script type="text/javascript" src="../bower_components/angular-moment/angular-moment.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/controllers.js"></script>
+<script type="text/javascript" src="js/filters.js"></script>
 
 </html>

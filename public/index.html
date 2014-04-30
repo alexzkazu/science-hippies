@@ -41,12 +41,13 @@
 
 	<section class="container" ng-controller="stringData">
 		<div>
-			<h1> Science-Hippie</h1>
+      <h1> Science-Hippie</h1>
       <h3> See some of your favorite scientists turn into hippies!</h3>
 
-      <div class="scientist">
-        <p class="scientist-name"> Albert Einstein</p>
-        <p class="scientist-quote"> {{string | replace}} </p>
+      <div class="scientist" ng-repeat="scientist in scientists">
+        <div class="scientist-picture"> <img src="{{scientist.picture}}"></div>
+        <p class="scientist-name"> {{scientist.name}} </p>
+        <p class="scientist-quote"> {{scientist.quote | replace}} </p>
       </div>
 	</section>
 
